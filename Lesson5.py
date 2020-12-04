@@ -26,11 +26,15 @@ print()
 speed = int(input("Enter the max speed: "))
 distance = int(input("Enter distance: "))
 
-time1 = distance / speed
-speed = speed + 15
-time2 = distance / speed
+def speeding(limit, distance):   
+    time1 = distance / limit
+    limit = limit + 15
+    time2 = distance / limit
 
-time2 = time1 - time2
-time2 = 60 * time2
-
-print(speed, distance, '->', round(time2), 'minutes')
+    time2 = time1 - time2
+    time2 = 60 * time2
+    
+    return(time2)
+    
+time = speeding(speed, distance)
+print(speed, distance, '->', round(time), 'minutes')
