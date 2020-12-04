@@ -33,4 +33,4 @@ time2 = distance / speed
 time2 = time1 - time2
 time2 = 60 * time2
 
-print(speed, distance, '->', time2, 'minutes')
+print(speed, distance, '->', round(time2), 'minutes')
